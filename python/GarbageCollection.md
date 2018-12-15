@@ -1,9 +1,10 @@
 #!README.md
 
 -> This is CPython specific and may be irrelevant for other implementations of python.
+
 ->  Cpython Garbage Collection source code.(https://github.com/python/cpython/blob/master/Modules/gcmodule.c)
 
-[*] Notes
+## Notes
 
     ->  Python works on names instead of variables.
     ->  Python memory manager uses a special heap to keep all objects and data structures.
@@ -11,7 +12,7 @@
     ->  Since reference-Count are not thread safe, thus python requires/uses GIL i.e Global Interpreter Lock so that 1 thread is run by an interpreter at 1 time therefore there is no true Multi-threading in python.
 
 
-[*] Ways for garbage collection -> 
+### Ways for garbage collection -> 
 
     A. Tracing - Mark and sweep (beneficial for cyclical dependencies & runs when a threshold is achieved in number of objects rpesent in memory.) 
 
@@ -24,7 +25,7 @@
     C. Generational - Most objects die young(works on this theory)
 
 
-[*] Reference-count Garbage Collection
+### Reference-count Garbage Collection
 
     -> Every time  a variable is used it's refcount is increase by 1 and everytime a variable goes out of scope or 'del' is called on a variable/object it's ref-count is decremented, once the ref-count reaches 0 the variable/object is deleted from the memory.
 
@@ -51,12 +52,12 @@
     -> It is not thread safe.
 
 
-[*] Generational Garbage Collection
+### Generational Garbage Collection
         
-   ## These lists are internal to python runtime only (obv.)
-     ### Generation0 = [] -- Short Lived : All newly created objects are placed here. 
-     ### Generation1 = [] -- Medium Lived  
-     ### Generation2 = [] -- Long Lived
+   ### These lists are internal to python runtime only (obv.)
+     #### Generation0 = [] -- Short Lived : All newly created objects are placed here. 
+     #### Generation1 = [] -- Medium Lived  
+     #### Generation2 = [] -- Long Lived
 
     -> It is a periodic process and incase we have a cycle to clean up we would need to wait for GC i.e it can slow down program.
 
@@ -86,7 +87,7 @@
     -> An object in 1 generation is promoted to a higher generation if it survives a garbage collection round, this also means that objects in Generation2 will stay for the program execution.
 
 
-## Another good thing to remember
+#### Another good thing to remember
 
     -> Size of data structures : {}.__sizeof__() > [].__sizeof__() > ().__sizeof__().
 
