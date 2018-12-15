@@ -5,7 +5,7 @@
   </b>
   <br>
   <br>
-   <a href="./python/"> Python </a>
+   <a href="./python/"> [*] Python </a>
 <br>
   <ul>
   <li><a href="./python/GarbageCollection.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >Garbage Collection</a></li>
