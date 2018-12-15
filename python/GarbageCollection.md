@@ -2,23 +2,23 @@
 
 -> This is CPython specific and may be irrelevant for other implementations of python.
 <br>
-->  <a href="https://github.com/python/cpython/blob/master/Modules/gcmodule.c"> Cpython Garbage Collection source code.</a>
+->  <a href="https://github.com/python/cpython/blob/master/Modules/gcmodule.c"> Cpython Garbage Collection (GC) module source code.</a>
 
 
 <h2>Points to Remember</h2>
 
   ->  Python works on names instead of variables.<br>
   ->  Python memory manager uses a special heap to keep all objects and data structures.<br>
-  ->  Python uses reference-count + Generational for garbage collection.<br>
-  ->  Since reference-Count are not thread safe, thus python requires/uses <b>GIL</b> i.e <b>Global Interpreter Lock</b> so that 1 thread is run by an interpreter at 1 time therefore there is no true Multi-threading in python.<br>
+  ->  Python uses `reference-count + Generational` for garbage collection.<br>
+  ->  Since reference-count are not thread safe, thus python requires/uses <b>GIL</b> i.e <b>Global Interpreter Lock</b> so that 1 thread is run by an interpreter at 1 time therefore there is no true Multi-threading in python.<br>
 
 
 <h2>Mechanisms for garbage collection</h2>
 
 A. <b>Tracing</b> - Mark and sweep (beneficial for cyclical dependencies & runs when a threshold is achieved in number of objects present in the memory) <br>
 1. Mark all reachable objects , by starting at root node and marking all live references. 
-<br>
 2. When marking is done , sweep will simply remove the dead objects including cyclic references.
+<br>
 
 B. <b>Reference-Count</b> - If reference count of any object/variable reaches 0 remove it from memory.
 
@@ -61,9 +61,8 @@ True
 -> In this python keeps 3 lists for storing every object based on it's generation & at a given time an object can only be a part of 1 generation only.
 <h6> &nbsp&nbsp&nbsp&nbsp&nbsp Generation0 = [ ] -- Short Lived : All newly created objects are placed here. <br>
  &nbsp&nbsp&nbsp&nbsp&nbsp Generation1 = [ ] -- Medium Lived<br>
- &nbsp&nbsp&nbsp&nbsp&nbsp Generation2 = [ ] -- Long Lived<br>
-</h6 
-<u><h5> These lists are internal to python runtime only (obv.)</h5></u>
+ &nbsp&nbsp&nbsp&nbsp&nbsp Generation2 = [ ] -- Long Lived</h6>
+<i><h5>&nbsp&nbsp&nbsp&nbsp&nbsp These lists are internal to python runtime only (obv.)</h5></i>
 
 -> Generational GC is a periodic process and incase we have a cycle to clean up then would need to wait for GC and thus  it can slow down program.
 
