@@ -6,6 +6,7 @@
 <br>
   <ul>
   <li><a href="./python/GarbageCollection.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >Garbage Collection</a></li><br>
+  <li><a href="./python/HowDoesItWorks.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >How Does python work</a></li><br>
   </ul>
 <br>
 
