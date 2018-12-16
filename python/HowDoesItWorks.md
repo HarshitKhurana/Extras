@@ -36,7 +36,7 @@ b't\x00\x00d\x01\x00t\x01\x00\x83\x02\x00\x01d\x00\x00S'
 <br>
 &emsp; &emsp; &emsp; &emsp;  &emsp; * Platform Independency i.e write once and run anywhere , it also means that not only the '.py' file but also the compiled bytecode i.e '.pyc' on 1 platform can easily run on the same python version of another platform.
 <br><br>
- &emsp; &emsp; &emsp; -> Python is a <a href="https://en.wikipedia.org/wiki/Stack_machine">stack based virtual machine</a> i.e both the interpreter part and the VM part is present in the <a href="#heap">heap</a>(special heap which contains everything.
+ &emsp; &emsp; &emsp; -> Python is a <a href="https://en.wikipedia.org/wiki/Stack_machine">stack based virtual machine</a> i.e both the interpreter part and the VM part is present in the <a href="#heap">heap</a>(special heap which contains everything).
 </br>
 &emsp; &emsp; &emsp; -> The Virtual Machine part is responsible for executing the bytecode.
 <br> 
@@ -47,16 +47,15 @@ b't\x00\x00d\x01\x00t\x01\x00\x83\x02\x00\x01d\x00\x00S'
 <br><br>
 &emsp; &emsp; &emsp; &emsp;2. <b>Evaluation Stack</b> : In each frame, there's an evaluation stack (also called the data stack). This stack is where execution of that function occurs, and executing Python code consists mostly of pushing things onto this stack, manipulating them, and popping them back off.
 <br><br>
-&emsp; &emsp; &emsp; &emsp;3. <b>Block Stack</b>
-Also in each frame, there's a block stack. This is used by Python to keep track of certain types of control structures: loops, try/except blocks, and with blocks all cause entries to be pushed onto the block stack, and the block stack gets popped whenever you exit one of those structures. This helps Python know which blocks are active at any given moment so that, for example, a continue or break statement can affect the correct block.
-<br>
+&emsp; &emsp; &emsp; &emsp;3. <b>Block Stack</b> : Also in each frame, there's a block stack. This is used by Python to keep track of certain types of control structures: loops, try/except blocks, and with blocks all cause entries to be pushed onto the block stack, and the block stack gets popped whenever you exit one of those structures. This helps Python know which blocks are active at any given moment so that, for example, a continue or break statement can affect the correct block.
+<br><br>
 &emsp; &emsp; &emsp; <img src="./pythonStack.png">
 <br>
 
 <h4 id="dis"> Dis - disassembler </h4>
 &emsp; &emsp;-> TOS : Top of Stack<br>
 &emsp; &emsp;-> TOS1 : Seconds on Top of Stack<br>
-&emsp; &emsp;-> TOS2 : Thirdon Top of Stack<br><br>
+&emsp; &emsp;-> TOS2 : Third on Top of Stack<br><br>
 &emsp; &emsp;-> Walking through python bytecode using 'dis module'
 <br><br>
 
@@ -95,6 +94,7 @@ Instruction(opname='RETURN_VALUE', opcode=83, arg=None, argval=None, argrepr='',
 &emsp; &emsp;&emsp; &emsp; * <b>starts_line   </b> : line started by this opcode (if any), otherwise None<br>
 &emsp; &emsp;&emsp; &emsp; * <b>is_jump_target</b> : True if other code jumps to here, otherwise False<br>
 
+&emsp; &emsp;-> The values a,b,c in brackets in the LOAD_FAST instruction of output of `dis.dis(result)` refers to the variable name in our function result().<br>
 &emsp; &emsp;-> The '2' in the first line of output of `dis.dis(result)` refers to line number 2 of result().<br>
 &emsp; &emsp;-> Using 'dis module' we can exactly see the opcode for every instruction that is being executed.<br>
 &emsp; &emsp;-> Lets analyse the bytecode for if-else blocks and loops.<br>
