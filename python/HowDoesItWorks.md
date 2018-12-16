@@ -16,7 +16,7 @@
  &nbsp &nbsp &nbsp &nbsp &nbsp <strong>Ans.1:</strong>    Yeah ByteCode , python actually first compiles the source code and generates the intermediatory bytecode (seen in a .pyc file) which is finally interpreted by the interpreter.
 
 <img src="./CodeExecution.png">
-<br><br>
+<br>
 &emsp; &emsp; &emsp;  <strong>-> Need for ByteCode? </strong><br>
 &emsp; &emsp; &emsp; &emsp; &emsp;-> It improves the startup time i.e the speed with which they are loaded (<a href="https://docs.python.org/3/tutorial/modules.html#compiled-python-files">but has no affect on execution time</a>).
 <br>
