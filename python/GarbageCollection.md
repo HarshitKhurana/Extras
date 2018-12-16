@@ -112,4 +112,11 @@ True
 
 -> Dictionary is way too heavy than list or tuple.<br><br>
 
+<hr>
+<h3> Resources|References </h3>
+
+-> <a href="https://www.youtube.com/watch?v=F6u5rhUQ6dU">PyCon 2016 Video, overview of all GC mechanisms and what does python use</a><br>
+-> <a href="https://www.quora.com/How-does-garbage-collection-in-Python-work-What-are-the-pros-and-cons">Quora answer for doubts</a><br>
+-> <a href="https://docs.python.org/3/library/gc.html">Python GC module Documentation</a><br>
+
 
