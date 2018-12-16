@@ -5,8 +5,8 @@
    <a href="./python/"> [*] Python </a>
 <br>
   <ul>
-  <li><a href="./python/GarbageCollection.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >Garbage Collection</a></li><br>
-  <li><a href="./python/HowDoesItWorks.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >How Does python work</a></li><br>
+  <li><a href="./python/GarbageCollection.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >Garbage Collection</a></li>
+  <li><a href="./python/HowDoesItWorks.md " &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp >How Does python work</a></li>
   </ul>
 <br>
 
