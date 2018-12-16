@@ -1,4 +1,4 @@
-<h2><center>GarbageCollection.md</center></h2>
+<h2><center>GarbageCollection</center></h2>
 
 -> This is CPython specific and may be irrelevant for other implementations of python.
 <br>
@@ -10,6 +10,7 @@
   ->  Python works on names instead of variables.<br>
   ->  Python memory manager uses a special heap to keep all objects and data structures.<br>
   ->  Python uses `reference-count + Generational` for garbage collection.<br>
+  ->  Every python object instance has a corresponding C-Type instance.<br>
   ->  Since reference-count are not thread safe, thus python requires/uses <b>GIL</b> i.e <b>Global Interpreter Lock</b> so that 1 thread is run by an interpreter at 1 time therefore there is no true Multi-threading in python.<br>
 
 
