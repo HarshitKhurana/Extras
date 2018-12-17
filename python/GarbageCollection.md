@@ -1,7 +1,7 @@
 <h2><center>GarbageCollection</center></h2>
 
--> This is CPython specific and may be irrelevant for other implementations of python.
-<br>
+-> Examples used in the code are run with python version 3.5.2.<br>
+-> This is CPython specific and may be irrelevant for other implementations of python.<br>
 ->  <a href="https://github.com/python/cpython/blob/master/Modules/gcmodule.c"> Cpython Garbage Collection (GC) module source code.</a>
 
 

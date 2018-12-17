@@ -2,7 +2,8 @@
 <h2><center>HowDoesItWork ?</center></h2>
 
 -> Things mentioned here are specific to Cpython and may differ for different implementations of python.<br>
-->  Every python object instance has a corresponding C-Type instance.<br>
+-> Examples used in the code are run with python version 3.5.2.<br>
+-> Every python object instance has a corresponding C-Type instance.<br>
 -> <a id="heap">Python memory manager uses a <u><b><i>special heap</i></b></u> to keep all objects and data structures in memory.</a><br>
 
 <h3> * Python runs it's BYTECODE in a VIRTUAL MACHINE. </h3> 
@@ -13,7 +14,8 @@
  &emsp; &emsp; <strong>Ques.2:</strong> What has a <b>Virtual Machine</b> got to do with python ? <br>
 </p>
 <b> Let me Explain....</b><br><br>
- &emsp; &emsp; <strong>Ans.1:</strong>    Yeah ByteCode , python actually first compiles the source code and generates the intermediatory bytecode (seen in a .pyc file) which is finally interpreted by the interpreter.
+ &emsp; &emsp; <strong>Ans.1:</strong>    Yeah ByteCode , python actually first compiles the source code and generates the intermediatory bytecode (seen in a ./__pycache__/ directory) which is finally interpreted by the interpreter.
+
 
 <img src="./CodeExecution.png">
 <br>
@@ -29,13 +31,14 @@
 >>> def printFunction():
 ...     print ("Value of tempVariable is : " , tempVariable)
 >>> printFunction.__code__.co_code
-b't\x00\x00d\x01\x00t\x01\x00\x83\x02\x00\x01d\x00\x00S'
+b't\x00\x00d\x01\x00t\x01\x00\x83\x02\x00\x01d\x00\x00S'  # --> ByteCode in hex , some characters are written instead of their hex
 ```
 &emsp; &emsp; <strong>Ans.2:</strong> Here the word 'Virtual Machine' refers to a 'process based Virtual Machine' & not 'system based virtual machine' like (VMWare, Vbox etc).<br>
 &emsp; &emsp; &emsp;-> <strong>But why VirtualMachine ? </strong>
-<br>
-&emsp; &emsp; &emsp; &emsp;  &emsp; * Platform Independency i.e write once and run anywhere , it also means that not only the '.py' file but also the compiled bytecode i.e '.pyc' on 1 platform can easily run on the same python version of another platform.
-<br><br>
+<p>
+&emsp; &emsp; &emsp; &emsp;  &emsp; * Platform Independency i.e write once and run anywhere , it also means that not only the '.py' file but also the compiled bytecode i.e files present in ./__pycache__/ on 1 platform can easily run on the same python version of another platform.
+</p>
+
  &emsp; &emsp; &emsp; -> Python is a <a href="https://en.wikipedia.org/wiki/Stack_machine">stack based virtual machine</a> i.e both the interpreter part and the VM part is present in the <a href="#heap">heap</a>(special heap which contains everything).
 </br>
 &emsp; &emsp; &emsp; -> The Virtual Machine part is responsible for executing the bytecode.
