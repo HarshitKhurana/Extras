@@ -50,7 +50,7 @@ True
 
 -> In case of cyclic references like doubly Link list , Graphs etc if we rely on reference count we would never be able to delete the object from memory and that object would always be occupying space in memory therefore for these python uses Generational GC mechanism.
 
--> `del x` , only decrements the reference count of x and not actually deletes it , the variable is only deleted when it's ref-Count reaches 0.
+-> `del x` , only decrements the reference count of x and not actually deletes it , the variable is only deleted when it's ref-Count reaches 0 using __del__ method.
 
 -> Reference count = 0 means immediate clean up.
 
