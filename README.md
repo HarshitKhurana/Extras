@@ -9,4 +9,8 @@
   <li><a href="./python/HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does python work</a></li>
   </ul>
 <br>
+   <a href="./python/"> [*] C|C++ </a>
+  <ul>
+  <li><a href="./C|C++/dynamic|static_Libraries.png "&emsp; &emsp; &emsp;>dynamic|static_Libraries.png</a></li>
+  </ul>
 
