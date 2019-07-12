@@ -1,5 +1,5 @@
 
-## Cython - First Code BENCHMARKING
+## Speed Comparison Cython vs Cython
 
 -> Running same code in python and cython for sum of `n` numbers and returning it.
 
