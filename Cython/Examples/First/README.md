@@ -100,5 +100,6 @@ user@localhost:/app# python -m timeit -s 'from  sumToN\_C3 import mainFunc' 'mai
 ## HOLY SHIT
 
 ## The Gain is around 1232 times(828 milliSecond/672 microSecond)
+  (Note this gain is solely becuase the function being executed is CPU bound , this gain value would be comparitively very less in case of practical applications , where Memory and I/O are also taken into account. )
 
 

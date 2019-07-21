@@ -17,6 +17,6 @@
    <a href="./Cython/"> [*] Cython Intro</a>
   <ul>
   <li><a href="./Cython/README.md "&emsp; &emsp; &emsp;>README</a></li>
-  <li><a href="./Cython/Examples/First/README.md"&emsp; &emsp; &emsp;>Speed Comparison Cython vs Cython</a></li>
+  <li><a href="./Cython/Examples/First"&emsp; &emsp; &emsp;>Speed Comparison Cython vs Cython</a></li>
   </ul>
 
