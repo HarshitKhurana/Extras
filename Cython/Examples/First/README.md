@@ -13,6 +13,9 @@
 |4.  | setup2.py       | To compile cython code , with some little modifications                      |
 |5.  | setup3.py       | To compile cython code , with major possible modifications for optimisations |
 
+---
+> **NOTE:** Make sure that **No Errors/Warning** should occur during compilation else it won't work.</br>
+---
 
 #### Test 1 : No Modification in Code ( .py and .pyx are same )
 
@@ -101,5 +104,6 @@ user@localhost:/app# python -m timeit -s 'from  sumToN\_C3 import mainFunc' 'mai
 
 ## The Gain is around 1232 times(828 milliSecond/672 microSecond)
   (Note this gain is solely becuase the function being executed is CPU bound , this gain value would be comparitively very less in case of practical applications , where Memory and I/O are also taken into account. )
+
 
 

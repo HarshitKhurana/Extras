@@ -25,8 +25,9 @@ cdef int z = 12      # Strictly typed variable in Cython
 |----|:-----------------|:-------------------------------------------------------------------------:|
 |1.  | \*.py            | Simple Python Code                                                        |
 |2.  | \*.pyx           | The Cython Code                                                           |
-|3.  | \*.py            | Script to compile the cython code                                         |
-|4.  | \*.so            | The compiled `shared object` i.e `.so` file generated after compilation.  |
+|3.  | setup.py         | Script to compile the cython code                                         |
+|4.  | \*.pxd           | The file containing definitions, similar to `.h` files in C.              |
+|5.  | \*.so            | The compiled `shared object` i.e `.so` file generated after compilation.  |
 
 ##### -> Compiling the `.pyx` file :
 ```

@@ -4,6 +4,7 @@
 ##### -> This folder contains a Cython example of the Python code. ( <a href="https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html#the-basics-of-cython">Taken from Documentation </a>), along with it's explaination.
 &nbsp; &nbsp; -> Cython code for finding prime numbers upto a number `nb_primes`, and returning a python list.
 
+-> Available as  prime\_code.pyx
 ```
   1. def primes(int nb_primes):                                                                                                                              
   2.     cdef int n, i, len_p
@@ -34,7 +35,7 @@
 > **Alternate : Use numpy arrays or Typed MemoryViews.**
 ---
 
-### -> Points to Ponder :
+### -> Code Explaination :
 
 | LineNumber  | Purpose                                                                      |
 |-------------|:------------------------:                                                    |
@@ -52,3 +53,32 @@
 | 22.         | Returning the `python list`, Since we have not sprecified any `type` with `result_as_listresult_as_list` variable it defaults to `python-Type object`. |
 
 
+### Automatic Type Conversions :
+
+|	C types			                                     | From Python types	   | To Python types	          |
+|--------------------------------------------------|:--------------------:|----------------------------:|
+|[unsigned] char, [unsigned] short, int, long      |  int, long           |  int                        |
+|unsigned int, unsigned long, [unsigned] long long |  int, long           |  long                       |
+| float , double , long double                     |  int, long, float    |  long                       |
+| char \*                                          |  str/bytes           | str(python2)|bytes(python3) |
+| C array                                          |  iterable            | list                        |
+| struct, union                                    |  -                   | dict                        |
+
+---
+> **NOTE:** Make sure that you know the length of C Array at compile time, else it will fail(becuase in C we need the length of array before-hand).</br>
+---
+
+---
+> **NOTE:** Try to ensure that the return type for all functions is a python object only **(much easier to manage)**.</br>
+---
+
+#### -> Cython easily supports all python data structures which means we can statically define the data-types of all python objects/variables.
+```
+# We are only defining the data-type of the python objects/variable so that the python interpreter doesn't have to look it up again and again.
+
+cdef int i = 0                                              # For int, long, float, double , bint. char
+cdef str s = "Hello I am a string"                          # For str, bytes, unicode, char*
+cdef dict data = {}                                         # For set ,dict
+cdef list dataList = []                                     # For set ,dict
+cdef list dataTuple = ()                                    # For set ,dict 
+```

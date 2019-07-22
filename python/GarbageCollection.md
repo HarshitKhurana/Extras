@@ -113,6 +113,7 @@ True
 ```
 
 -> Dictionary is way too heavy than list or tuple.<br><br>
+-> In python `set` and `dictionaries` are way to faster for lookups than Lists, the reason being that both provide Constant time lookup, for dictionaries(it's obvious) but for `SETs` they are actually internally creates using hash tables, and thus contant time lookups.
 
 <hr>
 <h3> Resources|References </h3>
