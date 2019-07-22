@@ -4,6 +4,8 @@
 -> This is CPython specific and may be irrelevant for other implementations of python.<br>
 ->  <a href="https://github.com/python/cpython/blob/master/Modules/gcmodule.c"> Cpython Garbage Collection (GC) module source code.</a>
 
+-> NOTE : Everything in python is an object, and every object is implemented as a dictionary, this is not very cache friendly.
+
 
 <h2>Points to Remember</h2>
 
