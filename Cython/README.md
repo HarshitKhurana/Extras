@@ -19,6 +19,9 @@ cdef int z = 12      # Strictly typed variable in Cython
 |2.  | cdef    | cython only functions, can't access these from python-only code, must access within Cython, since there will be no C translation to Python for these.      |
 |3.  | cpdef   | C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array. |
 
+---
+> **Note:** Use 'cpdef' when you are calling this function from python code, and use 'cdef'  when you are calling this function from 'Cython' code directly.
+---
 
 ##### -> File Structure : 
 |S.No| File Extenstion  | Explaination                                                              |
@@ -57,6 +60,19 @@ for i in range(n):
 ```
 ##### -> If `i` is declared as an integer (cdef int i), then `Cython` will optimize this into a standard *`C based for-loop`*.
 
+##### -> Performance gain is directly proportional to C-level functions/types , the more the functions,variables, data structures used are C-type the more is the performance gain.
+```
+python_list  = []             # python list data structure
+cdef list cython_list = []    # cython - statically defined list
+cdef int c_array[10]          # An array in C type  
+
+The Performance for the above data structures will be as :
+
+(Slowest)                       (Fastest)
+python_list < cython_list < c_array
+```
+##### -> Also know that in finally compiling the '.pyx'--to-->'.c'--and then to-->'.so' we can actually add compiler flags to add/modify/remove type-checking , 'gcc'  optimization flags etc.
+##### -> Cython has a feature to disable GIL (Global Interpreter Lock) with directive `with nogil` , though it would make the multi-threaded programs run faster, but might add  more things to manage.
 
 ### [\*] Requirements
 ##### -> Cython : `pip install cython`.

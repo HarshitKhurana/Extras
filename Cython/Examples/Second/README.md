@@ -77,8 +77,22 @@
 # We are only defining the data-type of the python objects/variable so that the python interpreter doesn't have to look it up again and again.
 
 cdef int i = 0                                              # For int, long, float, double , bint. char
+
+# Below are some of the higher-level data-types (python based), that cython supports
+# In this case Cython will use typed-C structures.
+
 cdef str s = "Hello I am a string"                          # For str, bytes, unicode, char*
 cdef dict data = {}                                         # For set ,dict
 cdef list dataList = []                                     # For set ,dict
 cdef list dataTuple = ()                                    # For set ,dict 
+
+
+# Some of the low-level data-types (C/C++ based), these will squeeze out more performace gain (comparitiviely complex to manage)
+
+cdef int data[5] , *ptr                                     # Array , raw pointers
+cdef Color color                                            # enum, struct, union
+cdef vector[int] data                                       # C++ STL (vector , map etc)
+cdef int[:,:,:] data                                        # memory views, numpy arrays etc.
 ```
+
+

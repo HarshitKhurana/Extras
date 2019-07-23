@@ -1,4 +1,4 @@
-## Calling C Functions from Cython
+## Calling C/C++ Functions from Cython
 
 ##### -> This directory contains `c_functions.pyx`, a cython file which internally calls C functions.
 ##### -> Compile `c_functions.pyx` as :
@@ -58,9 +58,10 @@ def Anotherfunction(x=9999999999):
 > **NOTE:** Rather use 'size\_t' data-type which automatically  tries to fit the size of variable based on system.
 ---
 
+###### ->  The file `cpp_functions.pyx` contains a few examples in C++ (contains comments adn are self-explanatory), it must contains `# distutils: language=c++` directive.
+
 ### RESOURCES :
 
 * <a href="https://www.youtube.com/watch?v=4xpeJYWvbuU"> Cython To speed up Python</a>
-* <a href="https://cython.readthedocs.io/en/latest/src/userguide/sharing_declarations.html#sharing-declarations"> Cython Documentation : Sharding </a>
 
 

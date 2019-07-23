@@ -16,7 +16,9 @@
 <br>
    <a href="./Cython/"> [*] Cython Intro</a>
   <ul>
-  <li><a href="./Cython/README.md "&emsp; &emsp; &emsp;>README</a></li>
+  <li><a href="./Cython/README.md "&emsp; &emsp; &emsp;>Readme</a></li>
   <li><a href="./Cython/Examples/First"&emsp; &emsp; &emsp;>Speed Comparison Cython vs Cython</a></li>
+  <li><a href="./Cython/Examples/Second"&emsp; &emsp; &emsp;> Data-types with Code example</a></li>
+  <li><a href="./Cython/Examples/Third"&emsp; &emsp; &emsp;> Calling C/C++ functions from Cython</a></li>
   </ul>
 
