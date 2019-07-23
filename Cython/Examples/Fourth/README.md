@@ -24,8 +24,12 @@
 ##### -> Similar to the concept of `header files` (.h) in C/C++, cython also has similar structure for segregating the definition and decleration of classes/functions.
 ###### &nbsp; &nbsp; &nbsp; -> Example :
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -> Decleration in `student_extensionType_segregated.pxd` and definition in `student_extensionType_segregated.pyx`.
+</br>
 OR
+</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -> Both clubbed together in `student_extensionType.pyx` .
+
+##### -> In the above mentioned code examples , we have use '@property' in order to use the value of attribute outside Cython i.e in the python code, but there are more scoping available i.e increasing/limiting the scope, refer to  'scope\_modification.pyx'.
 
 ### [\*] Resources
 
