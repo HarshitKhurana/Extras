@@ -21,4 +21,5 @@ cdef class Student:
 # In the python code we can access only 2 attributes i.e '_name' and '_rollNumber' with the access level as mentioned above.
 
 # For using this class in `student.py` a simple python module, import as :
-    #   from student cimport student                                                                                                                                                      
+    #   cimport student                                                                                                                                                      
+    #   import student                                                                                                                                                      

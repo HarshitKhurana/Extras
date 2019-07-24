@@ -33,4 +33,5 @@ cdef class Student:
     # Note : since we haven't declared a property for `_rollNumber` thus it won't be accessible in the python space.
 
 # For using this class in `student.py` a simple python module, import as :
-    #   from student cimport student                                                                                                                                                      
+    #   cimport student                                                                                                                                                      
+    #   import student                                                                                                                                                      

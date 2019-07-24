@@ -20,7 +20,7 @@ cdef int z = 12      # Strictly typed variable in Cython
 |3.  | cpdef   | C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array. |
 
 ---
-> **Note:** Use 'cpdef' when you are calling this function from python code, and use 'cdef'  when you are calling this function from 'Cython' code directly.
+> **Note:** Use 'cpdef' when you are calling this function from python code, and use 'cdef'  when you are calling this function from 'Cython' code only. Incase of doubt use 'cpdef' just to be on safe-side.
 ---
 
 ##### -> File Structure : 
@@ -73,6 +73,7 @@ python_list < cython_list < c_array
 ```
 ##### -> Also know that in finally compiling the '.pyx'--to-->'.c'--and then to-->'.so' we can actually add compiler flags to add/modify/remove type-checking , 'gcc'  optimization flags etc.
 ##### -> Cython has a feature to disable GIL (Global Interpreter Lock) with directive `with nogil` , though it would make the multi-threaded programs run faster, but might add  more things to manage.
+##### -> Whatever modules uses 'cdef/cpdef' would have to be compiled.
 
 ### [\*] Requirements
 ##### -> Cython : `pip install cython`.
