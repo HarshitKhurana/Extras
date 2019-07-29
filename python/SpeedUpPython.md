@@ -5,7 +5,7 @@
 ---
 
 
-0. Always prefer use **builtin functions**, because a;lmost of the time they are way too faster as being implemented in C. (for cpython)
+0. Always prefer use **builtin functions**, because almost of the time they are way too faster as being implemented in C. (for cpython)
 
 1. Use **sets instead of lists**, as it provides much faster lookups. 
 
@@ -88,3 +88,8 @@ return set(a) & set(b) # Obv this is faster
 
 14. Use numpy incase of arrays mathematical computation etc. after all it's in cython and thus much faster. For more speed port to cython.
 
+
+#### References :
+* https://wiki.python.org/moin/PythonSpeed/PerformanceTips
+* https://www.techbeamers.com/python-code-optimization-tips-tricks/
+* https://www.monitis.com/blog/7-ways-to-improve-your-python-performance/
