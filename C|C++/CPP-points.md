@@ -61,6 +61,59 @@ explicit A (int x)  {   // But this won't compile as we have mentioned explicit 
 <b>Ans</b>  : If you use the exit() function, your program will terminate and no destructors will be called. Be wary if you’re relying on your destructors to do necessary cleanup work (e.g. write something to a log file or database before exiting).
 
 
+<b>Ques</b> : How does object creation work in multi-level Inheritance in C++ ? </br>
+<b>Ans</b>  : C++ constructs derived classes in phases, starting with the most-base class (at the top of the inheritance tree) and finishing with the most-child class (at the bottom of the inheritance tree). As each class is constructed, the appropriate constructor from that class is called to initialize that part of the class.
+```
+class A { 
+  public:
+    int m_a;
+    A() { cout << "A "; } 
+};
+class B : public A  { 
+  public:
+    int m_b;
+    B() { cout << "B "; } 
+};
+class C : public B  { 
+  public:
+    int m_c;
+    C() { cout << "c "; } 
+};
+class D : public C  { 
+  public:
+    int m_d;
+    D() { cout << "D "<<endl; } 
+};
+
+int main()  {
+  D d;
+}
+Output : 
+A B C D
+```
+<b>Ques</b> : How to call constructor of parent class in case of inheritance ? </br>
+<b>Ans</b>  : While calling the constructor of Parent during `inheritance` Always use **Initialisation List** and never explicitly call the constructor.
+```
+The Base object is constructed first using the appropriate Base constructor. If no base constructor is specified, the default constructor will be used.
+class A {
+  int m_a;
+  public: 
+    A(int a) { m_a = a; }
+}
+class B {
+  int m_b;
+  public: 
+    B(int b) : A(b)   # Use initialisation List like this
+    { m_b = b; }
+    B(int b) 
+    {
+      A (b);    # Don't Do this  
+      m_b = b;
+     }
+}
+```
+
+
 <b>Ques</b> : Can I call a constructor from another constructor ? </br>
 <b>Ans</b>  : Yes, Constructor delegating (calling constructor from constructor) is possible from C++11 on, Call it in the member initialisation list only.
 ```
