@@ -3,9 +3,9 @@
    <a href="./python/"> [*] Python </a>
 <br>                                                                                                                                                          
   <ul>
-  <li><a href="./python/GarbageCollection.md "&emsp; &emsp; &emsp;>Garbage Collection</a></li>
-  <li><a href="./python/HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does python work</a></li>
-  <li><a href="./python/SpeedUpPython.md " &emsp; &emsp; &emsp; >Speed up Python Code</a></li>
+  <li><a href="./GarbageCollection.md "&emsp; &emsp; &emsp;>Garbage Collection</a></li>
+  <li><a href="./HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does python work</a></li>
+  <li><a href="./SpeedUpPython.md " &emsp; &emsp; &emsp; >Speed up Python Code</a></li>
   </ul>
 <br>
 
