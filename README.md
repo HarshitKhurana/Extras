@@ -13,6 +13,7 @@
    <a href="./C|C++/"> [*] C|C++ </a>
   <ul>
   <li><a href="./C|C++/dynamic|static_Libraries.png "&emsp; &emsp; &emsp;>dynamic|static_Libraries.png</a></li>
+  <li><a href="./C|C++/syscall-pic.png "&emsp; &emsp; &emsp;>Sys Call</a></li>
   </ul>
 <br>
    <a href="./Cython/"> [*] Cython Intro</a>
