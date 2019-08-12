@@ -517,3 +517,7 @@ Caught Base b, which is actually a Derived
 Caught Base b, which is actually a Derived
 
 ```
+
+<b>Ques 31</b> : How is CPP code compiled ?</br>
+<b>Ans</b>  : CPP <a href="https://github.com/chrislgarry/cpp-compilation">code compilation</a> explained. 
+
