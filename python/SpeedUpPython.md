@@ -18,7 +18,7 @@ for i in range(100):
 map(doSomethingWithX() ,  xrange(0,100))        # Much Faster , because interpreter only have to resolve the function name once.
 ```
 
-3. **try:ing** is cheap, **ifing** is expensive , when the chances of getting into the `exception` are less (execution inside `except` block is slower).
+3. **try'ing** is cheap, **if'ing** is expensive , when the chances of getting into the `exception` are less (execution inside `except` block is slower).
 
 ```python
 # Slower
@@ -65,7 +65,7 @@ Observed performance : a (Best)
 The reason we expect 'c' to be best is because the compiler(in C++,java etc) converts it into 1 machine instruction, whereas python doesn't have that concept.
 ```
 
-9.  For infinite loop `while 1` is better than `while True` the reason being that `while 1` is converted into a **single jump operation**.
+9.  For infinite loop `while 1` is better than `while True` the reason being that `while 1` is converted into a **single jump operation** , this is in `python2` only , for `python3` it's the same. The reason for this being in `python2` `True` is not listed as a keyword, so everytime the interpreter has to fetch it's value and the evaluate whereas in `python3` `True` is listed as a keyword and thus it doesn't have to fetch everytime.
 
 10. List comprehensions are better than `for` loop
  
