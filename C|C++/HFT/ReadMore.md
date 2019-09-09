@@ -1,4 +1,4 @@
-#### Read more no these topics and try to implement
+#### Read more on these topics and try to implement
 
 * Multi-threading : Atomics , locks  thread-safe code
 * Cache Locality and cache-friendly algorithms.

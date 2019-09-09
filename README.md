@@ -1,5 +1,5 @@
 <h3>Extras | Internals </h3><hr>
-<b>This is a repo which contains notes regarding languages , softwares their working , internals and a lot of other cool stuff.</b>
+<b>This is a repo which contains notes regarding languages , softwares their working , internals , tips on how to enhance skill-set in that particular language/software etc and a lot of other cool stuff.</b>
   <br>
  <h4>Table of Content</h4>
    <a href="./python/"> [*] Python </a>
@@ -14,6 +14,7 @@
   <ul>
   <li><a href="./C|C++/dynamic|static_Libraries.png "&emsp; &emsp; &emsp;>dynamic|static_Libraries.png</a></li>
   <li><a href="./C|C++/syscall-pic.png "&emsp; &emsp; &emsp;>Sys Call</a></li>
+  <li><a href="./C|C++/CPP-points.md "&emsp; &emsp; &emsp;>Some tips for writing C++</a></li>
   </ul>
 <br>
    <a href="./Cython/"> [*] Cython Intro</a>
@@ -24,4 +25,6 @@
   <li><a href="./Cython/Examples/Third"&emsp; &emsp; &emsp;> Calling C/C++ functions from Cython</a></li>
   <li><a href="./Cython/Examples/Fourth"&emsp; &emsp; &emsp;> Cython Extension Types</a></li>
   </ul>
-
+<br>
+   <a href="./git/"> [*] Git - Version Control System</a>
+  <li><a href="./git/HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does git works</a></li>
