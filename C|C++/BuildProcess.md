@@ -10,7 +10,7 @@
 * In the above image, their is a `BlackBox`, these steps will goes through explaining the internals of it :
 
 
-  **1. Pre-processing** : In the first phase , all the `#includes` , `macros`  , `conditional compilation`  basically all the statements that begin with `#` are processed i.e the pre-processor replaces that particular line with the actual content of the line.
+**1. Pre-processing** : In the first phase , all the `#includes` , `macros`  , `conditional compilation`  basically all the statements that begin with `#` are processed i.e the pre-processor replaces that particular line with the actual content of the line.
 
 ```bash
 $ cat example.cpp
