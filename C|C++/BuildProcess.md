@@ -7,6 +7,10 @@
 <img src="./BuildProcessTemp/compiler.png"></img>
 
 #### [\*] Steps
+
+---
+> **Note :** The below mentioned steps and examples are specifically for GNU gcc, though most other compilers follow the same process.
+---
 * In the above image, their is a `BlackBox`, these steps will goes through explaining the internals of it :
 
 
@@ -44,7 +48,7 @@ $ as -o example.o example.s
 
 ```
 
-  **4. Linking** : In the final linking phase, the linker links the object code with the library code to produce an executable file "example".
+  **4. Linking** : In the final linking phase, the linker links the diff object files together with the library code to produce an executable file "example".
 
 ```bash
 $ ld  -o example example.o `other required libraries here`
@@ -52,6 +56,18 @@ $ ld  -o example example.o `other required libraries here`
 # The final executable is produced here.
 ```
 
+#### [\*] C++ add-ons
+
+* The build process and steps that we discussed above are same for C, rather they are of `C` only and `C++` was designed to be compatible with them.
+ 
+* Primary thing
+  1. templates
+  2. Name mangling
+  3. Function over-loading, covered in mangling
+
+
+**Ques:** Do you remember that there was no concept of function overloading in C, then how did C++ have it (since it is based on C only)?
+**Ans :** Name Mangling i.e it simply replaces the name internally.
 
 
 #### [\*] References/Resources
