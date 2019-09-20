@@ -2,6 +2,11 @@
 <b>This is a repo which contains notes regarding languages , softwares their working , internals , tips on how to enhance skill-set in that particular language/software etc and a lot of other cool stuff.</b>
   <br>
  <h4>Table of Content</h4>
+   <a href="./Singleton"> [*] Singleton</a>
+  <ul>
+    <li><a href="./Singleton/ServiceDiscovery.md "&emsp; &emsp; &emsp;>Service Discovery</a></li>
+  </ul>
+<br>
    <a href="./python/"> [*] Python </a>
 <br>
   <ul>
