@@ -30,7 +30,7 @@
 **Ques:** How is Service Discovery performed in Cloud in the key-value datastore solution ?</br>
 **Ans:**  There are 2 primary methods for Service discovery in Cloud : 
 
-  * <a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/">Service Discovery in Micro-service Asrchitecture</a>
+  * <a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/">Service Discovery in Micro-service Architecture</a>
   * In both the implementations, 
     * The service instance registers itself with a `service registry` at it's startup.
     * The service instance is removed from `service registry` once it terminates.
@@ -93,4 +93,5 @@
   * **Apple** uses bonjour services , Linux provides OSS version of bonjour names **avahi** for name resolution.
   * Most of the **embedded systems** board liek ESP8266, TI 3200CC etc provides direct support for name-resolution over mDNS.
 
-  So instead of having a single machine where the **Service Registry** is stored , it is basically distributed in the entire network.
+  So instead of having a single machine where the **Service Registry** is stored , it is distributed in the entire network and can be used via the available network protocols and network API's.
+
