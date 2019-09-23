@@ -120,3 +120,52 @@ def any(list_arg):
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 
 ```
+
+7. Generators :  Generators are iterators, a kind of iterable you can **only iterate over once**. Generators do not store all the values in memory, they generate the values on the fly , and once iterated over the values are gone. (Lazy Evaluation)
+  * Benefits :
+    *  When the value returned by function is to be only used once and not again.
+    *  Use less memory as , the actual values are generated only when using the generator, not before.
+  * Drawback : 
+    * Cannot perform random access via indexes as possible with list.
+    * While using `join()` with generators it performs poor aas compared to lists.
+
+```bash
+>>> myGenerator = (i for i  in range(5))
+>>> myGenerator
+<generator object <genexpr> at 0x7fe2e1baf3b8>
+>>> for i in myGenerator:
+...     print (i)
+... 
+0
+1
+2
+3
+4
+>>> myGenerator
+<generator object <genexpr> at 0x7fe2e1baf3b8>
+>>> for i in myGenerator:
+...     print (i)
+... 
+>>> 
+
+```
+
+8. `yield` : It is a keyword which acts like return, except that the function returns a generator.
+  * When you call the function, the code you have written in the function body does not run. The function only returns the generator object.
+
+
+```bash
+>>> def createGenerator():
+...    mylist = range(3)
+...    for i in mylist:
+...        yield i*i
+...
+>>> mygenerator = createGenerator() # create a generator
+>>> print(mygenerator) # mygenerator is an object!
+<generator object createGenerator at 0x7fe4c7b8d9a038>
+>>> for i in mygenerator:
+...     print(i)
+0
+1
+4
+```
