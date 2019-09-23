@@ -1,6 +1,7 @@
-### General Notes on python :
+### [\*] General Notes on python :
 
-1. The inbuilt `hash()` in python, returns the hash value of the arg : 
+
+**1.** The inbuilt `hash()` in python, returns the hash value of the arg : 
   * This `hash()` is used in the hashing for `dictionaries` too.
 
 ```bash
@@ -9,7 +10,7 @@ True                        # Since 5.0 is actualy 5 only
 ```
 
 
-2. `staticmethod` vs `classmethod` : 
+**2.** `staticmethod` vs `classmethod` : 
   * The `@staticmethod` is not inherited in the child-class from the parent class.
   * The `staticmethod` is directly callable i.e it doesn't require the class itself or any instance of class , unlike the `@classmethod` and functions defined in the class resp.
 
@@ -28,7 +29,7 @@ class A:
     print ("static function with No argument")
 ```
 
-3. `all()` vs `any()`
+**3.** `all()` vs `any()`
   * `all()` returns True , when every element in the iterable is True.
   * `any()` returns True , when any element in the iterable is True.
 
@@ -46,7 +47,7 @@ def any(list_arg):
   return False
 ```
 
-4. *deepCopy* vs *shallowCopy* : 
+**4.** *deepCopy* vs *shallowCopy* : 
   * In `deepCopy` every element of the iterable is individually copied.
   * In `shallowCopy` only the reference to the original iterable is copied.
 
@@ -87,7 +88,7 @@ def any(list_arg):
 
 ```
 
-5. Lambda Functions : Anonymous functions.
+**5.** Lambda Functions : Anonymous functions.
   * To simply put it, `lambda` functions are the functions which don't start with the usual `def ` keyword. 
   * Lambda function syntax: 
 
@@ -109,7 +110,7 @@ def any(list_arg):
   'Full name: Guido Van Rossum'
   ```
 
-6. `Map` function  : This function takes input a function and a list, and then that function is called with all the items in the list and a new list with  output values in returned.
+**6.** `Map` function  : This function takes input a function and a list, and then that function is called with all the items in the list and a new list with  output values in returned.
 
 ```bash
 >>> aList = [i for i in range(10)]
@@ -121,7 +122,7 @@ def any(list_arg):
 
 ```
 
-7. Generators :  Generators are iterators, a kind of iterable you can **only iterate over once**. Generators do not store all the values in memory, they generate the values on the fly , and once iterated over the values are gone. (Lazy Evaluation)
+**7.** Generators :  Generators are iterators, a kind of iterable you can **only iterate over once**. Generators do not store all the values in memory, they generate the values on the fly , and once iterated over the values are gone. (Lazy Evaluation)
   * Benefits :
     *  When the value returned by function is to be only used once and not again.
     *  Use less memory as , the actual values are generated only when using the generator, not before.
@@ -150,7 +151,7 @@ def any(list_arg):
 
 ```
 
-8. `yield` : It is a keyword which acts like return, except that the function returns a generator.
+**8.** `yield` : It is a keyword which acts like return, except that the function returns a generator.
   * When you call the function, the code you have written in the function body does not run. The function only returns the generator object.
 
 
@@ -169,3 +170,4 @@ def any(list_arg):
 1
 4
 ```
+
