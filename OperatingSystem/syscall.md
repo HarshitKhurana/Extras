@@ -18,7 +18,7 @@
 
 * syscalls though invoked using these wrapper functions are actually not simple functions , but instead are specific assembly instructions **(architeccture and kernel specific)**.
 
-* Linux uses numbers to specify syscalls.
+* Linux uses numbers to specify syscalls, these numbers can be different for different architectures,kernel versions etc.
 
 * When a syscall is made, and the transition from user-land to kernel-space occurs, the execution flow is interrupted and is transfered to kernel entry-point.
 
