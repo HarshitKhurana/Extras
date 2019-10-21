@@ -9,7 +9,7 @@ $ strace ./a.out
 * Location of syscalls in Linux : `/usr/include/asm/unistd_32.h`
 
 | syscall No.	| Func Name				| Description																	| 
-| ------------- |:---------------------:| -----------------------------------------------------------------------------:| 
+|:------------- |:----------------------|: -----------------------------------------------------------------------------:| 
 |1.				| exit 					| terminate the current process 												| 
 |2.				| fork 					| create a child process 														| 
 |3.				| read 					| read from a file descriptor 													| 
