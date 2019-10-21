@@ -8,6 +8,7 @@
 * These are generally not invoked directly (although you can in C and assembly code) , but rather via **wrapper functions** provide in **glibc**.
   * These wrapper functions act as normal functions like passing arguments , returning value etc.
   * Often(not always) the name of these functions and the name of the underlying syscall is same.
+<br>
 * What does a these wrapper function do ?
   * It performs the following things: 
     1. Setup information to identify the syscall and it's parameters.
@@ -17,7 +18,6 @@
 * syscalls though invoked using these wrapper functions are actually not simple functions , but instead are specific assembly instructions **(architeccture and kernel specific)**.
 <br>
 * Linux uses numbers to specify syscalls.
-<br>
 <br>
 * When a syscall is made, and the transition from user-land to kernel-space occurs, the execution flow is interrupted and is transfered to kernel entry-point.
 
@@ -38,6 +38,7 @@
   * It was added as a way to execute specific syscalls which do not need any real level of privilege to run.
   * This was done in order to reduce the syscall overhead i.e **Context Switching**.
   * Ex: gettimeofday() - it doesn't actually make syscall but rather vsyscall or vdso.
+<br>
 * **Limitations :**
   * The memory allocated is small and allows only 4 syscalls.
   * Security issue : The vssycall page is statically allocated to same address space in each process, which thus compromises the benefit of ASLR.
@@ -45,12 +46,16 @@
 
 #### [\*] VDSO
 * VDSO is the successor to **vsyscall**.
+<br>
 * VDSO i.e Virtual dynamic shared object 
   * It is a kernel mechanism for exporting a carefully selected **kernel-space** routines to **user-space** applications.
   * It is done so that the process can directly call these **kernel-space** routines without any extra performance penalty due to **Context Switch**.
 * VDSO is a memory in user-space which exposes some kernel functionalities.
+<br>
 * It offers safety through memory randomisation i.e dynamic allocation.
+<br>
 * It can handle more than 4 syscalls.
+<br>
 * VDSO is linked via the standard glibc package.
 
 > **Note :** 
