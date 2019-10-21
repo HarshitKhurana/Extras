@@ -6,7 +6,7 @@
 --
 
  <h4>Table of Content</h4>
-   <a href="./OperatingSystem/"> [*] Operating System</a>
+   <a href="./"> [*] Operating System</a>
 <br>                                                                                                                                                          
   <ul>
   <li><a href="./syscall.md "&emsp; &emsp; &emsp;>System Calls - syscall</a></li>
