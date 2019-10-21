@@ -1,8 +1,8 @@
 ### [\*] Linux syscall
 
+<img src = "syscall.png">
 
 * **syscall** or **System Call** are the fundamental interface between an application and the linux kernel.
-<img src = "syscall.png">
 <br>
 * It provides the medium to go from user-land to the kernel-land.
 <br>
