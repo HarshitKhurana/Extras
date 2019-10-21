@@ -1,8 +1,8 @@
 ### [\*] Linux syscall
 
-* These are the fundamental interface between an application and the linux kernel.
-<br>
 <img src = "syscall.png">
+<br>
+* These are the fundamental interface between an application and the linux kernel.
 * It provides the medium to go from user-land to the kernel-land.
 <br>
 * These are generally not invoked directly (although you can in C and assembly code) , but rather via **wrapper functions** provide in **glibc**.
