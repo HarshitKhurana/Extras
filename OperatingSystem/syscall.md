@@ -22,9 +22,7 @@
 
 * When a syscall is made, and the transition from user-land to kernel-space occurs, the execution flow is interrupted and is transfered to kernel entry-point.
 
---
 > **Note :** During the user-land to kernel-space transition the stack is also switched from user-stack to kernel-stack.
---
 
 * What is system call Table ?
   * A system call table , is used by the dispatcher to map syscall numbers to kernel functions.
