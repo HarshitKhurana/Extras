@@ -35,7 +35,8 @@
 <br>
    <a href="./OperatingSystem/"> [*] OperatingSystem</a>
   <ul>
-  <li><a href="./git/HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does git works</a></li>
+  <li><a href="./OperatingSystem/syscall.md "&emsp; &emsp; &emsp;>System Calls - syscall</a></li>
+  <li><a href="./OperatingSystem/syscallCheatSheet.md " &emsp; &emsp; &emsp; >Syscall - CheatSheet</a></li>
   </ul>
 <br>
    <a href="./git/"> [*] Git - Version Control System</a>
