@@ -20,7 +20,9 @@
 <img src= "./shared-memory.png">
 
 <br/>
-* Which is the fastest way for IPC ?
-  * Shared memory is the fastest way for IPC, but implementing them is harder as you would need to manage locks, mutex etc.
+
+**Ques:** Which is the fastest way for IPC ?
+
+**Ans:** Shared memory is the fastest way for IPC, but implementing them is harder as you would need to manage locks, mutex etc.
     * So , the performance output expected maybe less than the input as compared to sockets.
     * Also sockets are easily scalable.
