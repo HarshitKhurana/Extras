@@ -13,7 +13,6 @@
 * What are rdtsc and microsecond level timers?
 * Kernel tuning for low-latency ?
 * linux process scheduler
-* latenc
 
 * C++ 11/14 concepts ? feature diff between two ?
 * STL/iterators , SFINAE and template functions.
@@ -23,3 +22,4 @@
 * pass by copy with pointers ?
 * function pointers.
 * Async and callbacks in C++
+
