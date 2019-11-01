@@ -77,3 +77,51 @@
 
 </br>
 </br>
+
+**Ques 4:** What is Context switching and the steps involved ? </br>
+**Ans :** It is the mechanism of the OS to switch between different processes that want to run on system to allow multi-programming.
+  * Note1 : The CPU should be running in user-mode as much as possible: the purpose of a computer is to run programs.
+  * Note1 : The OS kernel is only invoked by an interrupt, exception or system call. It has to handle this as quickly as possible, and get back to user mode and continue to run a program.
+	* Context switching is expensive as it leads to flush of TLB and caches and then again re-loads it later.
+	* Context switching can happen due to :
+		* interrupt to CPU.
+		* process scheduling in OS.
+	
+  * **Steps :**
+	1. Get into kernel mode.
+	2. Quickly save the old program's registers somewhere, and the address of the next instruction it was about to execute, so they can be restored later. This storage area is known as a Process Control Block, or PCB, and it is stored in kernel-mode memory somewhere.
+	3. Save the mappings in the current page map, also into the PCB.
+	4. Unmap all of the old program's pages from the page map.
+	5. Choose a new program to re-start. Find its PCB.
+	6. Re-map the pages of the new program from its PCB.
+	7. Re-load the registers of the new program from its PCB.
+	8. Return to the next instruction of the new program, and return to user-mode at the same time.
+
+</br>
+</br>
+
+
+**Ques 4:** How linux kernel scheduler works ? </br>
+**Ans :** The linux kernel scheduler treats a process or a thread as same i.e a task, it's just that a process can contain n-number of threads (seperate tasks) , So a task (a task\_struct inside the kernel), in the context of the scheduler, is the thing being scheduled, and can be some kernel thread like kworker or kswapd, some user thread of a multi-threaded process (like firefox), or the single-thread of a single-threaded process (like bash), identified with that single-threaded process.
+
+</br>
+</br>
+
+**Ques 5:** List some points to note for ensuring low latency.
+**Ans :** Below are some points :-
+  1. 100% user space code , even the network stack and everything.
+  2. CPU Isolation
+  3. Process Isolation
+  4. Avoid interrups
+  5. Kernel tuning for low latency
+  6. Make sure the code is cache friendly.
+  7. Swap memory is slow.
+  8. Use shared memory for IPC.
+
+</br>
+</br>
+
+**Ques 5:** What is false sharing ?
+**Ans :** False sharing is a common problem in shared memory parallel processing. It occurs when two or more cores hold a copy of the same memory cache line. If one core writes, the cache line holding the memory line is invalidated on other cores.
+
+
