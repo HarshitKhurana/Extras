@@ -1,9 +1,11 @@
 #### Read more on these topics and try to implement
 
+### OS
 * Multi-threading : mutex , Atomics , locks , aysnc thread-safe code
 * spinlock , conditinal variable , semaphore
 * Cache Locality and cache-friendly algorithms.
-
+---------------
+### Linux
 * Why are signals(linux signals i suppose) slow ?
 * How multi-core systems ensure their caches are in sync ?
 * Why is context switching bad , what exactly happens during context-switching ?
@@ -13,7 +15,8 @@
 * What are rdtsc and microsecond level timers?
 * Kernel tuning for low-latency ?
 * linux process scheduler
-
+---------------
+### C++
 * C++ 11/14 concepts ? feature diff between two ?
 * STL/iterators , SFINAE and template functions.
 * Exception handling basics.

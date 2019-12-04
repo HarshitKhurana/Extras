@@ -99,6 +99,3 @@ std::auto_ptr<MyObject> p2 = p1; // Copy and transfer ownership.
 p2->DoSomething(); // Works.
 p1->DoSomething(); // Oh oh. Hopefully raises some NULL pointer exception.
 ```
-
-
-
