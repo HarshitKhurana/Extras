@@ -26,8 +26,7 @@ std::mutex m;
 void func(string s)
 {
    std::lock_guard<std::mutex> guard(m);    // RAII - if this goes out of scope, then mutex is automatically unlocked.
-   cout <<"string is : " << s<<endl;    
-   m.unlock();
+   cout <<"string is : " << s<<endl;
 }
 ``` 
 

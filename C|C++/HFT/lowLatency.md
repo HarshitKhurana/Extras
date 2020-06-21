@@ -47,6 +47,6 @@
 | L2 cache reference                 |          7   ns | 14x L1 cache									 			|				
 | Mutex lock/unlock                  |         25   ns |															 			|			
 | Main memory reference              |        100   ns | 20x L2 cache, 200x L1 cache 	 			|
-| Round trip within same datacenter  |    500,000   ns |															 			|				
-| disk seek                          | 10,000,000   ns |   10 ms  20x datacenter roundtrip	|
+| Round trip within same datacenter  |    500,000   ns | 500 us												 			|				
+| disk seek                          | 10,000,000   ns | 10 ms  20x datacenter roundtrip	  |
 

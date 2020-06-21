@@ -10,29 +10,31 @@
 ### [\*] Categories - Investment Banking
 | Front Office |
 |:------------ |
-| Traders sit in diff rooms with multiple screens and fast dialler| 
-| Typical image that come into your mind when thinking of stock market (wolf of wall street kind).| 
-| Things are very fast-paced here (manual decsicion making)| 
+|- Traders sit in diff rooms with multiple screens and fast dialler| 
+|- Typical image that come into your mind when thinking of stock market (wolf of wall street kind).| 
+|- Things are very fast-paced here (manual decsicion making)| 
 
 | Middle Office |
 |:------------  |
-| In this the people looks deeper into the stratergies to make money.| 
-| People here are  Accountants, Economists, Mathematicians and that kind.| 
-| Things are very a little slower here (much thinking process)| 
+|- In this the people looks deeper into the stratergies to make money.| 
+|- People here are  Accountants, Economists, Mathematicians and that kind.| 
+|- Things are very a little slower here (much thinking process)| 
 
 | Back Office |
 |:------------|
-| Maintaining the daily ledger, cash movements of the day are aggregated etc.| 
+|- Maintaining the daily ledger, cash movements of the day are aggregated etc.| 
 
 ### [\*] Trading Approaches
-#### Theory based : Investment
-* Know your investments.
-* Research and news driven.
-* Longer term holdings.
+|Theory based Investment    |
+|:--------------------------|
+|- Know your investments.    |
+|- Research and news driven. |
+|- Longer term holdings.     |
 
-#### Data driven : 
-* Statistical and trend-driven.
-* Can be very short term, even micro-seconds.
+| Data driven |
+|:--------------------------|
+|- Statistical and trend-driven.|
+|- Can be very short term, even micro-seconds.  |
 
 ### [\*] Trading Stratergies
 #### Arbitration : 
