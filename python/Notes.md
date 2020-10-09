@@ -291,7 +291,6 @@ mappingproxy({'__module__': '__main__', '__doc__': None, 'x': 3, '__weakref__': 
 ... 
 >>> D().hi()
 Hi! from A
-
 >>> D.__mro__
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>)
 # MRO : class D -> class B -> class A -> class C - > class A(not mentioned though) -> Object Class
@@ -314,7 +313,7 @@ Hi! from A
 Hi! from C
 >>> D.__mro__
 (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
-# MRO : class D -> class B -> class A -> class C - > class A(not mentioned though) -> Object Class
+# MRO : class D -> class B -> class C - > class A -> Object Class
 ```
   * In new-style MRO a **class comes into resolution order only once and that too after all of its subclasses are covered**, this is so as to ensure that if their is a sub-class that has over-rided the functionality of the parent class then it's handled in the ordering path.
 
