@@ -4,7 +4,7 @@
 **1.** The inbuilt `hash()` in python, returns the hash value of the arg : 
   * This `hash()` is used in the hashing for `dictionaries` too.
 
-```bash
+```python
 >>> hash(5) == hash (5.0)
 True                        # Since 5.0 is actualy 5 only
 ```
@@ -14,7 +14,7 @@ True                        # Since 5.0 is actualy 5 only
   * The `@staticmethod` is not inherited in the child-class from the parent class.
   * The `staticmethod` is directly callable i.e it doesn't require the class itself or any instance of class , unlike the `@classmethod` and functions defined in the class resp.
 
-```bash
+```python
 
 class A:
   def func(self):
@@ -33,7 +33,7 @@ class A:
   * `all()` returns True , when every element in the iterable is True.
   * `any()` returns True , when any element in the iterable is True.
 
-```bash
+```python
 def all(list_arg):
   for i in list_arg:
     if bool(i) == False:
@@ -51,7 +51,7 @@ def any(list_arg):
   * In `deepCopy` every element of the iterable is individually copied.
   * In `shallowCopy` only the reference to the original iterable is copied.
 
-```bash
+```python
 # Shallow Copy
 >>> a = [i for i in range(10)]
 >>> a
@@ -92,13 +92,13 @@ def any(list_arg):
   * To simply put it, `lambda` functions are the functions which don't start with the usual `def ` keyword. 
   * Lambda function syntax: 
 
-  ```bash
+  ```python
   >>> KeyWord input_Arguments semi-colon return_Value
   >>> lambda  x,y             :          x+y            # Lambda function to return sum of 2 numbers.
   ```
   * Example : 
 
-  ```bash
+  ```python
   >>> lambda x: x+1   # A lambda function which takes input `x` and returns output `x+1`.
 
   >>> func = lambda (x: x**2)   # Lambda function which returns square
@@ -112,7 +112,7 @@ def any(list_arg):
 
 **6.** `Map` function  : This function takes input a function and a list, and then that function is called with all the items in the list and a new list with  output values in returned.
 
-```bash
+```python
 >>> aList = [i for i in range(10)]
 >>> outList = list(map( (lambda x:x+x), aList))
 >>> aList
@@ -130,7 +130,7 @@ def any(list_arg):
     * Cannot perform random access via indexes as possible with list.
     * While using `join()` with generators it performs poor aas compared to lists.
 
-```bash
+```python
 >>> myGenerator = (i for i  in range(5))
 >>> myGenerator
 <generator object <genexpr> at 0x7fe2e1baf3b8>
@@ -155,7 +155,7 @@ def any(list_arg):
   * When you call the function, the code you have written in the function body does not run. The function only returns the generator object.
 
 
-```bash
+```python
 >>> def createGenerator():
 ...    mylist = range(3)
 ...    for i in mylist:
