@@ -276,14 +276,14 @@ mappingproxy({'__module__': '__main__', '__doc__': None, 'x': 3, '__weakref__': 
   * For python, it is also applicable on other attributes as well.
 
 ```python
-# Legacy MRO
+# Legacy MRO : DEPRECATED
 >>> class A():
 ...     def hi(self):
 ...             print ("Hi! from A")
 ... 
 >>> class B(A): pass
 ... 
->>> class C():
+>>> class C(A):
 ...     def hi(self):
 ...             print ("Hi! from C")
 ... 
@@ -298,7 +298,7 @@ Hi! from A
 
 
 # New-Style MRO
->>> class A(object):
+>>> class A(object):    # Only diff is here
 ...     def hi(self):
 ...             print ('Hi! from A')
 ... 
