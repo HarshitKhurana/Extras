@@ -8,7 +8,7 @@
 
 <h3> * Python runs it's BYTECODE in a VIRTUAL MACHINE. </h3> 
 
-  <b>  WTF ?</b><br>
+  <b>  Whattt ?</b><br>
 <p>
  &emsp; &emsp; <strong>Ques.1:</strong> Really <b> ByteCode </b>? isn't a compiled language like Java generates bytecode ? and iirc python is an interpreted language then why bytecode , what are you saying ?<br><br>
  &emsp; &emsp; <strong>Ques.2:</strong> What has a <b>Virtual Machine</b> got to do with python ? <br>
