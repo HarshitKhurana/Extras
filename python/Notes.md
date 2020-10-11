@@ -6,6 +6,7 @@
 > 2. ```my_list = [[]] * 3``` will result in a list with three references to the same inner list,
 >     Use: ```my_list = [[] for i in range(3)]```
 > 3. Do not put mutable objects in non-mutable structure, Eg: don't put list in tuple
+>
 > ```python
 >>> t = (1,2,[30,40])
 >>> t[2] += [50,60]
@@ -15,6 +16,7 @@ TypeError: 'tuple' object does not support item assignment
 >>> t
 (1, 2, [30, 40, 50, 60])
 > ```
+>
 ---
 
 
