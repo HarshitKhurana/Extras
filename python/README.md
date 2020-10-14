@@ -10,6 +10,7 @@
   <li><a href="./Decorators.md " &emsp; &emsp; &emsp; >Decorators</a></li>
   <li><a href="./OOPS.md " &emsp; &emsp; &emsp; >OOPS</a></li>
   <li><a href="./CodingTips.md " &emsp; &emsp; &emsp; >Coding Tips</a></li>
+  <li><a href="./Numpy.md " &emsp; &emsp; &emsp; >Numpy Intro</a></li>
   </ul>
  </ul>
 <br>

@@ -17,6 +17,7 @@
   <li><a href="./python/Decorators.md " &emsp; &emsp; &emsp; >Decorators</a></li>
   <li><a href="./python/OOPS.md " &emsp; &emsp; &emsp; >OOPS</a></li>
   <li><a href="./python/CodingTips.md " &emsp; &emsp; &emsp; >Coding Tips</a></li>
+  <li><a href="./python/Numpy.md " &emsp; &emsp; &emsp; >Numpy Intro</a></li>
   </ul>
 <br>
    <a href="./C|C++/"> [*] C|C++ </a>
