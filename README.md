@@ -2,12 +2,12 @@
 <b>This is a repo which contains notes regarding languages , softwares their working , internals , tips on how to enhance skill-set in that particular language/software etc and a lot of other cool stuff.</b>
   <br>
  <h4>Table of Content</h4>
-   <a href="./Singleton"> [*] Singleton</a>
+<a href="./Singleton"> [*] Singleton</a>
   <ul>
     <li><a href="./Singleton/ServiceDiscovery.md "&emsp; &emsp; &emsp;>Service Discovery</a></li>
   </ul>
 <br>
-   <a href="./python/"> [*] Python </a>
+  <a href="./python/"> [*] Python </a>
 <br>
   <ul>
   <li><a href="./python/GarbageCollection.md "&emsp; &emsp; &emsp;>Garbage Collection</a></li>
@@ -47,3 +47,11 @@
   <ul>
   <li><a href="./git/HowDoesItWorks.md " &emsp; &emsp; &emsp; >How Does git works</a></li>
   </ul>
+
+<br>
+   <a href="./AI/"> [*] Artificial Intelligence</a>
+  <ul>
+  <li><a href="./AI/1.md " &emsp; &emsp; &emsp; >Intro to AI<a></li>
+  <li><a href="./AI/2.md " &emsp; &emsp; &emsp; >Types of Problems in AI<a></li>
+  </ul>
+<br>
