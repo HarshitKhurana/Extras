@@ -56,3 +56,16 @@
   <li><a href="./AI/2.md " &emsp; &emsp; &emsp; >Types of Problems in AI<a></li>
   </ul>
 <br>
+
+<br>
+  <a href="./DBMS/"> [*] DBMS</a>
+  <ul>
+  <a href='./DBMS/1.md'> 1. Fundamentals</a><br>
+  <a href='./DBMS/2.md'> 2. Data Modelling</a><br>
+  <a href='./DBMS/3.md'> 3. Entity-Relationship Data Model</a><br>
+  <a href='./DBMS/4.md'> 4. Relation Data Model</a><br>
+  <a href='./DBMS/5.md'> 5. Functional Dependencies</a><br>
+  <a href='./DBMS/6.md'> 6. Normalization</a><br>
+  <a href='./DBMS/7.md'> 7. SQL</a><br>
+  </ul>
+<br>
