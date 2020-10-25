@@ -1,0 +1,27 @@
+
+syntax="proto3";
+
+// Generate Stub:
+// python -m grpc_tools.protoc --proto_path=. ./student.proto --python_out=. --grpc_python_out=.
+
+service StudentRegistry {
+
+// Since all the RPC calls will be initiated by the client thus the procedure name 
+// should be implemented server-side.
+
+// rpc  <procedureName> <Argument DataType> returns <return DataType> 
+    rpc addStudent (student) returns (studentId) {}
+    rpc getStudent (studentId) returns (student) {}
+    rpc removeStudent (studentId) returns (student) {}
+}
+
+message student {
+// numeric assignment is reqd internally by profotbuff
+    string name = 1;    
+    int32 cls = 2;
+
+}
+
+message studentId {
+    int32 studentId = 1;
+}
