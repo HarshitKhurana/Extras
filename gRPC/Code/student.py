@@ -63,7 +63,6 @@ class StudentRecords():
         student_object = Student(name, cls, sid)
         StudentRecords.student_map[sid] = student_object
         StudentRecords.studentId += 1
-        print ("addStudent: ", StudentRecords.student_map)
         return student_object.studentId
 
     def getStudent(self, studentId):
@@ -72,7 +71,6 @@ class StudentRecords():
         student_object = Student("",-1,-1)
         if studentId in StudentRecords.student_map:
             student_object = StudentRecords.student_map[studentId]
-        print ("getStudent: ", StudentRecords.student_map)
         return student_object
 
     def removeStudent(self, studentId):
@@ -81,5 +79,4 @@ class StudentRecords():
         student_object = Student("",-1,-1)
         if studentId in StudentRecords.student_map:
             student_object = StudentRecords.student_map.pop(studentId)
-        print ("removeStudent: ",StudentRecords.student_map)
         return student_object
