@@ -1,7 +1,6 @@
 grpcio==1.11.0
 backports.statistics==0.1.0
 Cython==0.29.21
-grpc==1.0.0
 ipaddr==2.2.0
 protobuf==3.13.0
 setuptools_svn==1.2
