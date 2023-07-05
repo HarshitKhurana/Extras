@@ -1,4 +1,4 @@
-grpcio==1.11.0
+grpcio==1.53.0
 backports.statistics==0.1.0
 Cython==0.29.21
 ipaddr==2.2.0
